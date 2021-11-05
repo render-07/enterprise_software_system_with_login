@@ -1,0 +1,16 @@
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
+export const REGISTER_FAIL = "REGISTER_FAIL";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAIL = "LOGIN_FAIL";
+export const LOGOUT = "LOGOUT";
+
+
+export const GET_CATEGORIES = 'GET_CATEGORIES';
+export const ADD_CATEGORY = 'ADD_CATEGORY';
+export const DELETE_CATEGORY = 'DELETE_CATEGORY';
+export const CATEGORIES_LOADING = 'CATEGORIES_LOADING';
+export const ADD_ITEM = 'ADD_ITEM';
+export const GET_ITEMS = 'GET_ITEMS';
+export const ITEMS_LOADING = 'ITEMS_LOADING';
+export const GET_SUPPLIERS = 'GET_SUPPLIERS';
+export const SUPPLIERS_LOADING = 'SUPPLIERS_LOADING';
