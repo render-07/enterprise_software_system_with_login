@@ -35,13 +35,16 @@ export default function Login() {
     }
 
     return (
+        <>
+        <div className="header"></div>
         <div id="login">
             <div className="container">
                 <div className="row login-box">
-                    <BaseLogin />
                     <LoginForm loginState={{handleSubmit, setEmail, setPassword, errorMessage, setError}} />
+                    <BaseLogin />
                 </div>
             </div>
       </div>
+      </>
     )
 }

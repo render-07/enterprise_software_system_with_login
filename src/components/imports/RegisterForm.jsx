@@ -14,10 +14,12 @@ export default function RegisterForm(props) {
         } = props.registerState;
    
     return (
-        <div className="col-sm-7 bg-color align-self-center">
+        <div className="col-sm-6 bg-color align-self-center">
             <div className="form-section">
-                    <div className="title">
-                        <h3>Create a new account</h3>
+                    <div className="title-r">
+                        <h1>DESIGN. DEVELOP. DEPLOY.</h1>
+                        <h5>We make it work</h5>
+                        <h4>CREATE A NEW ACCOUNT</h4>
                     </div>
                     <div className="login-inner-form">
                         <form method="POST" onSubmit={handleSubmit}>

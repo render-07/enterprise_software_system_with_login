@@ -14,14 +14,19 @@ export default function BaseLogin() {
 
 
     return (
-        <div className="col-sm-5 bg-img align-self-center">
+        <div className="col-sm-6 bg-img align-self-right">
+            {/*<div className="form-section">
+            <div className="title">
+            <h1>DESIGN. DEVELOP. DEPLOY.</h1>
+            <h5>We make it work</h5>
+            </div>
+    </div>*/}
             <div className="info">
-                <div className="logo clearfix">
-                    <Link className="nav-brand" to="/">Logo</Link>
-                </div>
-                <div className="btn-section clearfix">
-                    <button onClick={login} className={location.pathname === "/login" ? defaultClass + active : defaultClass}>Login</button>
+                <div className="btn-section">
                     <button onClick={register} className={location.pathname === "/register" ? defaultClass + active : defaultClass}>Register</button>
+                </div>
+                <div className="btn-section-l">
+                    <button onClick={login} className={location.pathname === "/login" ? defaultClass + active : defaultClass}>Login</button>
                 </div>
             </div>
         </div>

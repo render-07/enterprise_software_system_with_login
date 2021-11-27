@@ -6,11 +6,13 @@ export default function LoginForm(props) {
     let { handleSubmit, setEmail, setPassword, errorMessage, setError } = props.loginState;
 
     return (
-        <div className="col-sm-7  bg-color align-self-center">
+        <div className="col-sm-6  bg-color align-self-center">
+ 
         <div className="form-section">
-            <div className="title">
+            <div className="title-l">
             <h1>DESIGN. DEVELOP. DEPLOY.</h1>
-            <h5>We make it work.</h5>
+            <h5>We make it work</h5>
+                <h3>SIGN INTO YOUR ACCOUNT.</h3>
             </div>
             <div className="login-inner-form">
                 <form method="POST" onSubmit={handleSubmit}>
@@ -34,8 +36,8 @@ export default function LoginForm(props) {
                     </div>
 
                 </form>
-            </div>
-        </div>
+                </div>
+                </div>
         </div>
     )
 }

@@ -51,13 +51,16 @@ export default function Register() {
     }
 
     return (
+        <>
+        <div className="header"></div>
         <div id="login">
             <div className="container">
                 <div className="row login-box">
-                    <BaseLogin />
                     <RegisterForm registerState={registerData}  />
+                    <BaseLogin />
                 </div>
             </div>
       </div>
+      </>
     )
 }
