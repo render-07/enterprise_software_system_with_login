@@ -9,7 +9,8 @@ export default function LoginForm(props) {
         <div className="col-sm-7  bg-color align-self-center">
         <div className="form-section">
             <div className="title">
-            <h3>Sign into your account</h3>
+            <h1>DESIGN. DEVELOP. DEPLOY.</h1>
+            <h5>We make it work.</h5>
             </div>
             <div className="login-inner-form">
                 <form method="POST" onSubmit={handleSubmit}>
