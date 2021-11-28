@@ -1,5 +1,9 @@
 // Login Page Styling
+* {
+    box-sizing: border-box;
+  }
 
+@media (min-width: 200px) {
 .header{
     background: #fff url(http://localhost:3000/static/media/logo-green.5c1c03a3.png);
     background-repeat: no-repeat;
@@ -8,6 +12,7 @@
     height: 200px;
     margin-bottom: -200px;
     margin-top: -20px;
+}
 }
 #login{
     min-height: 100vh;
@@ -22,25 +27,68 @@
         color: #505050;
     }
 
+
+    
     .login-box{
         /**max-width: 960px;
         margin: 0 auto;
         box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
         border-radius: 10px;**/
-
-        > .bg-img{
+        @media (min-width: 1100px) {
+        .bg-img{
             background: #fff url(http://localhost:3000/static/media/pic.38ed8004.png) top right;
             padding-left: 10px;
-            background-color: blue;
             background-repeat: no-repeat;
-            background-size: 1000px 500px;
+            background-size: 1100px;
             background-position: right;
-            top: 100px;
-            margin-left: 0px;
+            margin-top: -650px;
+            margin-left: 420px;
             bottom: 0;
+            width: 1100px;
+            height: 1100px;
             opacity: 1;
+            float: right;
+            position: fixed;
+        }
+        }
+        
+        .rec-upper{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background: #99A2A1;
+            clip-path: polygon(100% 0, 100% 20%, 30% 0);
+            //transform: rotate(10deg);
+            opacity: 0.8;
         }
 
+        .rec-lower-right{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background: #00585A;
+            clip-path: polygon(100% 75%, 100% 100%, 0 100%);
+            //transform: rotate(10deg);
+            opacity: 0.8;
+        }
+
+        .rec-lower-left{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background: #DCDEDD;
+            clip-path: polygon(0 75%, 50% 100%, 0 100%);
+            //transform: rotate(10deg);
+            opacity: 0.8;
+        }
+
+        
         .info{
             height: 600px;
             position: relative;
@@ -58,8 +106,8 @@
 
             > .btn-section{
                 position: absolute;
-                top: 180px;
-                right: 190%;
+                top: 25%;
+                right: 90%;
                 margin-bottom: 0;
                 display: inline-block;
 
@@ -95,8 +143,101 @@
             }
             > .btn-section-l{
                 position: absolute;
-                top: 180px;
-                right: 158%;
+                top: 25%;
+                right: 55%;
+                margin-bottom: 0;
+                display: inline-block;
+
+                .link-btn{
+                    font-size: 12px;
+                    border: solid 1px;
+                    border-color: #00989B;
+                    background-color: #fff;
+                    color: #00989B;
+                    display: inline-block;
+                    @extend .font-bold;
+                }
+
+                .link-btn.active{
+                    background-color: #00989B;
+                    color: #fff;
+                    display: inline-block;
+                }
+
+              
+                > .btn-primary{
+                    @extend .text-center;
+                    line-height: 30px;
+                    width: 200px;
+                    text-transform: uppercase;
+                    border-radius: 50px 50px 50px 50px;
+                    margin-bottom: 15px;
+                    &:focus{
+                        outline: #00989B;
+                        box-shadow: none;
+                    }
+                }
+
+            }
+
+        }
+
+        .info-r{
+            height: 600px;
+            position: relative;
+
+            > .logo{
+                text-align: left;
+                margin: 20px;
+
+                > .nav-brand{
+                    font-size: 22px;
+                    @extend .font-bold;
+                    color: #505050;
+                }
+            }
+
+            > .btn-section{
+                position: absolute;
+                top: 25%;
+                right: 90%;
+                margin-bottom: 0;
+                display: inline-block;
+
+                .link-btn{
+                    font-size: 12px;
+                    border: solid 1px;
+                    border-color: #00989B;
+                    background-color: #fff;
+                    color: #00989B;
+                    display: inline-block;
+                    @extend .font-bold;
+                }
+
+                .link-btn.active{
+                    background-color: #00989B;
+                    color: #fff;
+                    display: inline-block;
+                }
+
+                > .btn-primary{
+                    @extend .text-center;
+                    line-height: 30px;
+                    width: 200px;
+                    text-transform: uppercase;
+                    border-radius: 50px 50px 50px 50px;
+                    margin-bottom: 15px;
+                    &:focus{
+                        outline: #00989B;
+                        box-shadow: none;
+                    }
+                }
+
+            }
+            > .btn-section-l{
+                position: absolute;
+                top: 25%;
+                right: 55%;
                 margin-bottom: 0;
                 display: inline-block;
 
@@ -139,12 +280,12 @@
     .form-section{
         @extend .text-center;
         max-width: 1000px;
-        margin-top: 300px;
-        margin-left: -250px;
+        margin-top: 500px;
+        margin-left: -225px;
         @extend .width-100;
 
         > .title-l{
-            margin-top: -350px;
+            margin-top: -170%;
             //margin-left: -1300px;
 
             > h1{ 
@@ -187,7 +328,7 @@
         }
 
         > .title-r{
-            margin-top: -240px;
+            margin-top: -170%;
             //margin-left: -1300px;
 
             > h1{ 
