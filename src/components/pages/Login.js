@@ -44,7 +44,7 @@ export default function Login() {
                     <BaseLogin />
                 </div>
             </div>
-      </div>
+        </div>
       </>
     )
 }

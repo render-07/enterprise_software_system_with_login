@@ -15,8 +15,13 @@ export default function LoginForm(props) {
     const login = () => history.push("/login")
 
     return (
-        <div className="col-sm-6  bg-color align-self-center">
+        <div className="col-lg-6  bg-color align-self-center">
         <div className="info">
+            <div className="title-l">
+                <h1>DESIGN. DEVELOP. DEPLOY.</h1>
+                <h5>We make it work</h5>
+                <h3>SIGN INTO YOUR ACCOUNT.</h3>
+            </div>
             <div className="btn-section">
                 <button onClick={register} className={location.pathname === "/register" ? defaultClass + active : defaultClass}>Register</button>
             </div>
@@ -25,11 +30,6 @@ export default function LoginForm(props) {
             </div>
         </div>
         <div className="form-section">
-            <div className="title-l">
-            <h1>DESIGN. DEVELOP. DEPLOY.</h1>
-            <h5>We make it work</h5>
-                <h3>SIGN INTO YOUR ACCOUNT.</h3>
-            </div>
             <div className="login-inner-form">
                 <form method="POST" onSubmit={handleSubmit}>
 

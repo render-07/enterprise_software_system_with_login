@@ -9,9 +9,11 @@ import store from './container/store';
 
 import img from './assets/pic.png';
 import logo from './assets/logo-green.png';
+import bg from './assets/background.jpg';
 
 console.log(img);
 console.log(logo);
+console.log(bg);
 
 
 
