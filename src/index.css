@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
   top: 0;
@@ -79,7 +80,7 @@ body {
 }
 
 .categ {
-  font-family: Momcake, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 .header-logo{
@@ -93,7 +94,7 @@ body {
 }
 
 h1 {
-  font-family: Momcake, sans-serif;
+  font-family: Poppins, sans-serif;
   color: #fff;
 }
 
