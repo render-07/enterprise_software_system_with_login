@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
   top: 0;
@@ -14,21 +14,21 @@ body {
   height: 100%;
 }
 
-.rec-upper-h{
+.rec-upper-h {
   z-index: -1;
   position: fixed;
   top: 0%;
   left: 0%;
   width: 100%;
   height: 100%;
-  background: #00989B;
+  background: #00989b;
   clip-path: polygon(100% 0, 100% 20%, 30% 0);
   /**transform: rotate(10deg);**/
   opacity: 0.8;
   margin-bottom: 0;
 }
 
-.rec-lower-right-h{
+.rec-lower-right-h {
   z-index: -1;
   position: fixed;
   top: 0%;
@@ -41,14 +41,14 @@ body {
   opacity: 0.8;
 }
 
-.rec-lower-left-h{
+.rec-lower-left-h {
   z-index: -1;
   position: fixed;
   top: 0%;
   left: 0%;
   width: 100%;
   height: 100%;
-  background: #00989B;
+  background: #00989b;
   clip-path: polygon(0 75%, 50% 100%, 0 100%);
   /**transform: rotate(10deg);**/
   opacity: 0.8;
@@ -69,10 +69,9 @@ body {
   border-radius: 30px;
   border: #fff solid 1px;
   background-color: #001719;
-  
 }
 /*hehe*/
-.header-c{
+.header-c {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,7 +82,7 @@ body {
   font-family: Poppins, sans-serif;
 }
 
-.header-logo{
+.header-logo {
   background: url(http://localhost:3000/static/media/logo-green.5c1c03a3.png);
   background-repeat: no-repeat;
   background-size: 200px;
@@ -126,7 +125,7 @@ h1 {
 }
 
 .category {
-  background: #00575A;
+  background: #00575a;
   border-style: solid;
   border-color: #fff;
   border-width: 0.5px;
@@ -210,14 +209,24 @@ h1 {
 .form-control-label {
   margin: 10px;
 } */
-
-
+.modal_main {
+  border: #fff solid 0.5px;
+  border-radius: 30px;
+  background-color: #001719;
+}
+#modal_header {
+  background-color: #001719;
+  border: #001719;
+}
+#modal_body {
+  background-color: #001719;
+}
 .center {
   position: relative;
   padding: 15px;
-  background: #fff;
-  border-radius: 50px;
-  color: #6a8076;
+  background-color: #001719;
+  color: #fff;
+  align-content: center;
 }
 
 .center .inputbox {
@@ -232,21 +241,22 @@ h1 {
   top: 0;
   left: 0;
   width: 100%;
-  border: 2px solid #000;
   outline: none;
   background: none;
   padding: 10px;
   border-radius: 30px;
   font-size: 13px;
+  background: #fff;
+  border-radius: 10px;
 }
 
 #suppliers {
   width: 100%;
-  border-radius: 10px;
   outline: none;
-  border: 2px solid #000;
-  border-radius: 30px;
+  border-radius: 10px;
   color: #6a8076;
+  padding: 10px;
+  font-size: 13px;
 }
 
 .center .inputbox:last-child {
@@ -279,10 +289,16 @@ h1 {
   font-family: Lato;
   font-weight: bold;
 }
-
+#add_item {
+  background-color: #6a8076;
+  color: #fff;
+  position: center;
+}
+#modal_footer {
+  align-content: center;
+}
 .add-form {
   margin: 15px;
-  
 }
 
 .box {
@@ -317,13 +333,13 @@ table tr:nth-child(odd) {
 }
 
 table tr:hover {
-  background-color: #00575A;
+  background-color: #00575a;
 }
 
 table th {
   padding-top: 10px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: #00575A;
+  background-color: #00575a;
   color: white;
 }
