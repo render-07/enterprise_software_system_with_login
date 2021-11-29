@@ -2,7 +2,7 @@
 Repository for subject Enterprise Software System AY 2020-2021 (web app). This is for educational purpose only.
 
 ### Steps to setup project
-1. Clone a project and install all the dependancy.
+1. Clone a project and install all the dependancy (yarn or npm).
 2. Create config.env file in the Root directory and specify PORT, MONGO_URI and JWT_SECRET.
 
 Example: 
