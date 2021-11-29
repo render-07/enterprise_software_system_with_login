@@ -45,7 +45,7 @@ const AddItem = ({handleClose, show, categoryID, title, suppliers}) => {
     console.log(suppliers);
 
     return (
-        
+        // Modal
             <Modal show={show} onHide={handleClose}>
                 <div className='modal_main'>
                     <Modal.Header id='modal_header'>
