@@ -1,29 +1,22 @@
+
+
 import React from 'react'
-import { useLocation, useHistory, Link } from 'react-router-dom';
 
-export default function BaseLogin() {
-
-    const location = useLocation();
-    const history = useHistory();
-
-    let defaultClass = "nav-link link-btn btn-primary default-bg";
-    let active = " active"
-
-    const register = () => history.push("/register")
-    const login = () => history.push("/login")
-
-
+export default function BaseLogin() { 
     return (
-        <div className="col-sm-5 bg-img align-self-center">
-            <div className="info">
-                <div className="logo clearfix">
-                    <Link className="nav-brand" to="/">Logo</Link>
-                </div>
-                <div className="btn-section clearfix">
-                    <button onClick={login} className={location.pathname === "/login" ? defaultClass + active : defaultClass}>Login</button>
-                    <button onClick={register} className={location.pathname === "/register" ? defaultClass + active : defaultClass}>Register</button>
-                </div>
+        <>
+        <div className="col-lg-6 align-self-right">
+            {/*<div className="form-section">
+            <div className="title">
+            <h1>DESIGN. DEVELOP. DEPLOY.</h1>
+            <h5>We make it work</h5>
             </div>
-        </div>
+    </div>*/}  
+        <div className="bg-img"></div>
+        </div>  
+        <div className="rec-upper"></div>
+        <div className="rec-lower-left"></div>
+        <div className="rec-lower-right"></div>
+        </>
     )
 }

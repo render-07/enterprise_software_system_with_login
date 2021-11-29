@@ -1,45 +1,113 @@
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  top: 0;
+  font-family: Lato;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: url(http://localhost:3000/static/media/background.ff23fd9a.jpg);
+  width: 100%;
+  height: 100%;
 }
 
+.rec-upper-h{
+  z-index: -1;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: #00989B;
+  clip-path: polygon(100% 0, 100% 20%, 30% 0);
+  /**transform: rotate(10deg);**/
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+.rec-lower-right-h{
+  z-index: -1;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  clip-path: polygon(100% 75%, 100% 100%, 0 100%);
+  /**transform: rotate(10deg);**/
+  opacity: 0.8;
+}
+
+.rec-lower-left-h{
+  z-index: -1;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: #00989B;
+  clip-path: polygon(0 75%, 50% 100%, 0 100%);
+  /**transform: rotate(10deg);**/
+  opacity: 0.8;
+}
+
+/**code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}**/
+/*comment*/
 .homeContainer {
+  z-index: 3;
   max-width: 1200px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
   padding: 30px;
   border-radius: 30px;
-  border-width: 1px;
-  background-color: #fff;
-  box-shadow: 0.5px 3px 15px #6a8076;
+  border: #fff solid 1px;
+  background-color: #001719;
+  
 }
-
-.header {
+/*hehe*/
+.header-c{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
+.categ {
+  font-family: Momcake;
+}
+
+.header-logo{
+  background: url(http://localhost:3000/static/media/logo-green.5c1c03a3.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: -200px;
+  margin-top: -50px;
+}
+
+h1 {
+  font-family: Momcake;
+  color: #fff;
+}
+
 .btn {
   border: none;
-  padding: 10px 20px;
+  padding: 0px 20px;
   margin: 5px;
   border-radius: 30px;
   cursor: pointer;
   text-decoration: none;
   font-size: 15px;
   font-weight: lighter;
+  height: 30px;
+  color: #001719;
+  border: #fff solid 0.5px;
 }
 
 .btn:focus {
@@ -56,18 +124,19 @@ code {
 }
 
 .category {
-  background: #fff;
+  background: #00575A;
   border-style: solid;
-  border-color: #eae9e9;
-  border-width: 2px;
-  border-radius: 50px;
-  padding: 10px 20px;
+  border-color: #fff;
+  border-width: 0.5px;
+  border-radius: 20px;
+  padding: 5px 20px;
   margin: 10px 0px;
   display: grid;
   grid-template-columns: 2fr 2fr;
   align-items: center;
-  grid-gap: 5rem;
+  grid-gap: 3rem;
   line-height: 1.8;
+  height: 50px;
 }
 
 .side-btn {
@@ -94,6 +163,9 @@ code {
 
 .category h3 {
   font-size: 21px;
+  color: #fff;
+  font-family: Lato;
+  font-weight: bold;
 }
 
 .category h4 {
@@ -109,12 +181,15 @@ code {
 
 .add-category-form input {
   display: block;
-  width: 50%;
+  width: 30%;
   height: 40px;
   margin: 10px auto;
   padding: 3px 10px;
   font-size: 17px;
+  color: #fff;
   border-radius: 30px;
+  background-color: #001719;
+  border: #fff solid 0.5px;
 }
 /* 
 .form-add-item {
@@ -194,19 +269,34 @@ code {
 
 .btn-form-block {
   display: block;
-  width: 20%;
-  background-color: #69c79d;
+  width: 15%;
+  background-color: #001719;
   margin: 0 auto;
   color: #fff;
+  border: #fff solid 0.5px;
+  font-family: Lato;
+  font-weight: bold;
 }
 
 .add-form {
   margin: 15px;
+  
 }
 
+.box {
+  width: 100%;
+  height: 100%;
+  background-color: #001719;
+  border-radius: 20px;
+  border: #fff solid 0.5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: 75%;
+  height: 75%;
+  margin: 0 auto;
 }
 
 table td,
@@ -224,9 +314,9 @@ table tr:hover {
 }
 
 table th {
-  padding-top: 12px;
+  padding-top: 10px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: #9ce0c3;
+  background-color: #00575A;
   color: white;
 }

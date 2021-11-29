@@ -27,6 +27,7 @@ export const ItemTable = ({items}) => {
     = useTable({ columns, data })
 
     return (
+        <div className="box">
         <table {...getTableProps()}>
         <thead>
           {headerGroups.map(headerGroup => (
@@ -50,6 +51,7 @@ export const ItemTable = ({items}) => {
           })}
         </tbody>
       </table>
+      </div>
 
     )
 }

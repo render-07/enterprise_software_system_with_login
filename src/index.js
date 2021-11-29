@@ -7,7 +7,15 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './container/store';
 
-import './assets/bg_img.jpg';
+import img from './assets/pic.png';
+import logo from './assets/logo-green.png';
+import bg from './assets/background.jpg';
+
+console.log(img);
+console.log(logo);
+console.log(bg);
+
+
 
 ReactDOM.render(
   <Provider store={store}>

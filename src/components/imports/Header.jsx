@@ -16,9 +16,9 @@ export default function Header() {
 
     return (
         <header>
-            <nav className="navbar navbar-expand-lg navbar-light primary-gradient shadow">
+            <nav className="navbar navbar-expand-lg navbar-light primary-gradient" style={{zIndex:1}}>
                 <Link className="nav-link brand mx-auto" to="/">
-                    <h5 className="text-light m-0">Docla</h5>
+                    <div className="header-logo"></div>
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false">
                     <i className="fas fa-bars"></i>
