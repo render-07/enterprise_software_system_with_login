@@ -36,16 +36,14 @@ export default function Home() {
         <Header></Header>
         <main className="body-bg">
         <div className="homeContainer">
-                <SubHeader className="categ" text='CATEGORIES' onAdd={toggleState} changeColor={showAddCategory} style = {{color: '#6a8076'}}/>
-                {showAddCategory && <AddCategory/>}
-                {/*<Categories categories = {categories} onDelete = {deleteCategory} onToggle = {toggleReminder}/>*/}
-                <Categories/>
-            </div>
+            <SubHeader className="categ" text='CATEGORIES' onAdd={toggleState} changeColor={showAddCategory} style = {{color: '#6a8076'}}/>
+            {showAddCategory && <AddCategory/>}
+            {/*<Categories categories = {categories} onDelete = {deleteCategory} onToggle = {toggleReminder}/>*/}
+             <Categories/>
+        </div>
         <div className="rec-upper-h"></div>
         <div className="rec-lower-left-h"></div>
         <div className="rec-lower-right-h"></div>
-            
-           
         </main>
     </>    
     )

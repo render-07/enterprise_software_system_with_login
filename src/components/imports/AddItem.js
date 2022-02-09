@@ -14,6 +14,7 @@ const AddItem = ({handleClose, show, categoryID, title, suppliers}) => {
     const [quantity, setQuantity] = useState('');
     const [price, setPrice] = useState('');
     const [supplier, setSupplier] = useState('');
+    const [qr, setQr] = useState('');
 
     const onSubmit = (e) => {
         // Prevents from actually submitting into a page 
@@ -26,7 +27,8 @@ const AddItem = ({handleClose, show, categoryID, title, suppliers}) => {
             quantity: quantity,
             price: price,
             categoryID, categoryID,
-            supplierID: supplier
+            supplierID: supplier,
+            qr: "qr here"
         };
 
         // Dispatch
@@ -39,7 +41,7 @@ const AddItem = ({handleClose, show, categoryID, title, suppliers}) => {
         setQuantity('');
         setPrice('');
         setSupplier('');
-
+        setQr('');
     }
 
     console.log(suppliers);

@@ -26,6 +26,11 @@ const ItemSchema = new Schema({
         type: String,
         required: true
     },
+
+    qr: {
+        type: String,
+        required: true
+    },
     
     dateAdded:{
         type: Date,

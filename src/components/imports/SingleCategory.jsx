@@ -3,6 +3,7 @@ import { deleteCategory } from '../../container/categoryActions';
 import { useState } from 'react'
 import AddItem from "./AddItem";
 import ItemTable from './Tables/ItemTable';
+import QRCode from "react-qr-code";
 
 const SingleCategory = ({category, categoryID, items, suppliers}) => {
     // Call dispatch
@@ -18,7 +19,7 @@ const SingleCategory = ({category, categoryID, items, suppliers}) => {
 
     const handleClose = () => setShowAddItem(false);
     const handleShow = () => setShowAddItem(true);
-
+    
     return (
         <div className="wrapper">
             <div className='category'>
@@ -56,8 +57,14 @@ const SingleCategory = ({category, categoryID, items, suppliers}) => {
             categoryID={categoryID} title={category.categoryName}
             suppliers={suppliers}/>
             {showItems && <ItemTable items={items}/>}
+
         </div>
     )
 }
+
+// () => {
+//     return (
+//         
+//     );
 
 export default SingleCategory
