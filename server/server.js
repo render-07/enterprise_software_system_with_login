@@ -17,16 +17,8 @@ connect();
 app.use('/api', require('./router/router'));
 
 // Use routes
-app.get('/', (req, res, next) => {
-
-    res.status(200).json({
-        status: 'success',
-        data: {
-            name: 'name of your app',
-            version: '0.1.0'
-        }
-    });
-
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 app.use('/api/categories', require('./router/api/category'));
