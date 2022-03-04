@@ -17,10 +17,6 @@ connect();
 app.use('/api', require('./router/router'));
 
 // Use routes
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
-
 app.use('/api/categories', require('./router/api/category'));
 app.use('/api/items', require('./router/api/item'));
 app.use('/api/suppliers', require('./router/api/supplier'));
