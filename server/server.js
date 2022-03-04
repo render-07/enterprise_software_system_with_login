@@ -17,6 +17,18 @@ connect();
 app.use('/api', require('./router/router'));
 
 // Use routes
+app.get('/', (req, res, next) => {
+
+    res.status(200).json({
+        status: 'success',
+        data: {
+            name: 'name of your app',
+            version: '0.1.0'
+        }
+    });
+
+});
+
 app.use('/api/categories', require('./router/api/category'));
 app.use('/api/items', require('./router/api/item'));
 app.use('/api/suppliers', require('./router/api/supplier'));
